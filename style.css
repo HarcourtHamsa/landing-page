@@ -1,0 +1,152 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: url(./images/bg-intro-desktop.png) no-repeat center;
+  background-color: hsl(0, 100%, 74%);
+  font-size: 14px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > div {
+  flex-basis: 40%;
+}
+
+#info-card {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1rem;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+}
+
+input {
+  border: 1px solid grey;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+input:focus {
+  outline-color: hsl(248, 32%, 49%);
+  caret-color: hsl(248, 32%, 49%);
+}
+
+.input-group {
+  position: relative;
+}
+
+.error-icon {
+  position: absolute;
+  right: 2%;
+  bottom: 25%;
+}
+
+button {
+  border: 0;
+  box-shadow: 0px 4px 1px 0px rgba(40, 145, 99, 0.9);
+  cursor: pointer;
+  background-color: hsl(154, 59%, 51%);
+}
+
+input,
+button {
+  padding: 1rem;
+  width: 100%;
+}
+
+.text-white {
+  color: white;
+}
+
+.bold-900 {
+  font-weight: 900;
+}
+
+.error {
+  margin: auto;
+  transform: translate(0, -50%);
+  color: hsl(0, 100%, 74%);
+  float: right;
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+.x-large {
+  font-size: 3rem;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.rounded-sm {
+  border-radius: 5px;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+.shadow {
+  box-shadow: 0px 6px 1px 0px hsla(0, 0%, 0%, 0.4);
+}
+
+.small {
+  font-size: x-small;
+}
+
+.text-muted {
+  color: hsl(246, 25%, 77%);
+  
+}
+
+#t-and-c {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1083px) {
+  .container {
+    width: 90vw !important;
+    flex-direction: column;
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .container > div {
+    flex-basis: unset;
+  }
+
+  .x-large {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
